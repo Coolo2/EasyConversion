@@ -10,7 +10,7 @@ Returns:
     ['21', '15', '255', '0']
 """
 
-binary = c.DecimaltoBinary("21", return_type=bin)
+binary = c.DecimalToBinary("21", return_type=bin)
 """
 Converts the decimal (as a str, can be int) into binary, returning as a bin. 
 Returns:
