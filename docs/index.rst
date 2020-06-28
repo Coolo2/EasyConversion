@@ -261,7 +261,7 @@ Version history
 | 
 
 ******************************
-**0.3.1** : 28 June 2020
+**0.4.1** (current) : 28 June 2020
 ******************************
 
     * Fixed major bug causing letter conversions to freeze
@@ -271,7 +271,7 @@ Version history
 | 
 
 ********************************************
-**0.4.0** (current) : 28 June 2020
+**0.4.0** : 28 June 2020
 ********************************************
 
     * Re-ordered sections to make converting easier to read
