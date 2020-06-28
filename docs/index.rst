@@ -40,7 +40,7 @@ Decimal to binary:
 Usage:
 ^^^^^^^^^^^^^^^^
 .. code-block:: python
-    ``DecToBin(decimal : str, int, list, return_type=str)``
+   ``DecToBin(decimal : str, int, list, return_type=str)``
 
 
 
