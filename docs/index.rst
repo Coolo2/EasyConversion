@@ -10,7 +10,7 @@ Easy Conversion
 ******************
 Starting
 ******************
-:blue:`this part is blue`.
+:red: `this part is red?`
 **Installation:**
 
 ``pip install EasyConversion``
