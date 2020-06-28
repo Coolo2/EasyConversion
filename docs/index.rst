@@ -32,8 +32,9 @@ Decimal to binary
 
   Usage:
   ------
-    Usage ::
-        .DecimalToBinary(decimal : str, int, list, return_type=str)
+    Usage
+    .. code-block:: python
+        DecimalToBinary(decimal : str, int, list, return_type=str)
     
     
     Arguments:
