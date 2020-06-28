@@ -1,14 +1,14 @@
-===================
-Introduction
-===================
+##################
+Easy Conversion
+##################
 
 | EasyConversion is a library for easily converting in python. It is mostly made for testing, but can be used.
 | It is very early so don't expect much from it
 
 
-===================
+******************
 Starting
-===================
+******************
 
 Installation
 -----------
@@ -26,25 +26,25 @@ Importing:
 
 
 
-===================
+***************************
 EasyConversion.convert.
-===================
+***************************
     
     
-    =================
-    Decimal to binary
-    =================
+=================
+Decimal to binary
+=================
 
 
 
-        Usage:
-        ------
-            ``DecimalToBinary(decimal : str, int, list, return_type=str)``
+    Usage:
+    ------
+        ``DecimalToBinary(decimal : str, int, list, return_type=str)``
 
 
 
-        Arguments:
-        ---------
+    Arguments:
+    ---------
 
-            | ``decimal`` the decimal number to input. Type: ``str, int, list``
-            | Optional: ``return_type`` the output type. Options: ``bin, str, int`` Defaults to bin
+        | ``decimal`` the decimal number to input. Type: ``str, int, list``
+        | Optional: ``return_type`` the output type. Options: ``bin, str, int`` Defaults to bin
