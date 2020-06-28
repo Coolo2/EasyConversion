@@ -38,7 +38,7 @@ EasyConversion.convert.
 
 
         Usage:
-       ---------
+        --------
             ``DecToBin(decimal : str, int, list, return_type=str)``
 
 
