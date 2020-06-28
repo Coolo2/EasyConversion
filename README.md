@@ -4,13 +4,34 @@ The GitHub for the EasyConversion package.
 
 For in-detail documentation see the [readthedocs page](https://easyconversion.readthedocs.io/en/latest/).
 
-For in-build documentation use:
-```python
-from EasyConversion import docs
-print(docs.BinToDec)
+Installation:
+```pip
+pip install EasyConversion
 ```
-Options:
-* .BinToDec
-* .DecToBin
+Basic example:
+```python
+from EasyConversion import convert
+from EasyConversion import docs
+"""Imports"""
+
+
+print(convert.binary.decimal(["10101", "1111", "11111111", "InvalidBinary"], return_type=str))
+"""
+Prints the list of binaries as decimal numbers, returning in a str list.
+Returns:
+    ['21', '15', '255', '0']
+"""
+
+binary = convert.decimal.binary("21", return_type=bin)
+"""
+Converts the decimal (as a str, can be int) into binary, returning as a bin. 
+Returns:
+    0b10101
+"""
+
+
+print(docs.Bin.Dec)
+"""Prints documentation for Binary To Decimal conversions"""
+```
 
 Also see the [PyPi page](https://pypi.org/project/EasyConversion/) for download files / pip syntax
