@@ -260,6 +260,16 @@ Version history
 | 
 | 
 
+******************************
+**0.3.1** : 28 June 2020
+******************************
+
+    * Fixed major bug causing letter conversions to freeze
+    * Added PyPi description
+    * Updated GitHub page
+
+| 
+
 ********************************************
 **0.4.0** (current) : 28 June 2020
 ********************************************
@@ -305,4 +315,4 @@ Version history
 **0.1** : 27 June 2020
 ******************************
 
-    * Initial release (``.Convert.BinToDec`` and ``.Convert.DecToBin``) [after **0.3** these are ``.convert.BinToDec`` and ``.convert.DecToBin``]
+    * Initial release (``.Convert.BinToDec`` and ``.Convert.DecToBin``) [after **0.3** these do not work.]
