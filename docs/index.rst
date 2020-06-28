@@ -32,12 +32,12 @@ Decimal to binary
 
   Usage:
   ------
-    .. code-block guess
+    Usage ::
         .DecimalToBinary(decimal : str, int, list, return_type=str)
     
     
-      Arguments:
-      ---------
+    Arguments:
+    ---------
      
-          | ``decimal`` the decimal number to input. Type: ``str, int, list``
-          | Optional: ``return_type`` the output type. Options: ``bin, str, int`` Defaults to bin
+        | ``decimal`` the decimal number to input. Type: ``str, int, list``
+        | Optional: ``return_type`` the output type. Options: ``bin, str, int`` Defaults to bin
