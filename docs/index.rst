@@ -18,11 +18,11 @@ Starting
     Importing:
     ------------------
 
-        Importing main conversion: ::
-              from EasyConversion.convert import Convert
+        Importing main conversion:
+              ``from EasyConversion.convert import Convert``
 
-        Importing Documentation in python: ::
-              from EasyConversion.docs import Docs
+        Importing Documentation in python:
+              ``from EasyConversion.docs import Docs``
 
 
 
