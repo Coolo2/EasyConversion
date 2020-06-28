@@ -37,7 +37,7 @@ Decimal to binary:
 
 
 
-**Usage::**
+**Usage**::
 
    DecToBin(decimal : [str, int, list], return_type=bin)
 
@@ -69,7 +69,7 @@ Binary to Decimal:
 
 
 
-**Usage::**
+**Usage**::
 
    BinToDec(binary : [bin, int, str, list], return_type=int)
 
