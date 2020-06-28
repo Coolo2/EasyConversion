@@ -18,7 +18,7 @@ Installation
 Importing:
 ----------
 
-    Importin main conversion: ::
+    Importing main conversion: ::
           from EasyConversion.convert import Convert
 
     Importing Documentation in python: ::
@@ -32,14 +32,13 @@ Decimal to binary
 
   Usage:
   ------
-    Usage
 .. code-block:: python
     DecimalToBinary(decimal : str, int, list, return_type=str)
-..
+
     
     
-    Arguments:
-    ---------
+Arguments:
+---------
      
-        | ``decimal`` the decimal number to input. Type: ``str, int, list``
-        | Optional: ``return_type`` the output type. Options: ``bin, str, int`` Defaults to bin
+    | ``decimal`` the decimal number to input. Type: ``str, int, list``
+    | Optional: ``return_type`` the output type. Options: ``bin, str, int`` Defaults to bin
