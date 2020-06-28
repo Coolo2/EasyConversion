@@ -2,6 +2,10 @@
 Easy Conversion
 ##################
 
+`PyPi page <https://pypi.org/project/EasyConversion/>`_ | `GitHub page <https://github.com/Coolo22/EasyConversion/>`_
+
+|
+
 | EasyConversion is a library for easily converting in python. It is mostly made for testing, but can be used.
 | It is very early so don't expect much from it
 | For code examples, please see `here <https://github.com/Coolo22/EasyConversion/tree/master/Examples>`_
@@ -13,7 +17,7 @@ Setup
 
 **Installation:**
 
-``pip install EasyConversion``
+    ``pip install EasyConversion``
 
 Or download it from the `PyPi page <https://pypi.org/project/EasyConversion/>`_
 
@@ -28,7 +32,7 @@ Or download it from the `PyPi page <https://pypi.org/project/EasyConversion/>`_
 
 
 ####################################
-EasyConversion.convert
+``EasyConversion``.convert
 ####################################
     
     Section for converting. There will be input, output, aliases and usage Documented.  
@@ -43,13 +47,13 @@ EasyConversion.convert
 
 **Usage**::
 
-   .DecToBin(decimal : [str, int, list], return_type=bin)
+   .decimal.binary(decimal : [str, int, list], return_type=bin)
 
 
 **Full example**::
    
    from EasyConversion import convert
-   print(convert.DecToBin("21", return_type=bin))
+   print(convert.decimal.binary("21", return_type=bin))
    
 
 **Arguments:**
@@ -69,9 +73,9 @@ EasyConversion.convert
 
 **Aliases:**
 
-    * dectobin
-    * decimaltobinary
-    * DecimalToBinary
+    * dec.Bin
+    * Dec.Bin
+    * Decimal.Binary
 
 | 
 
@@ -85,12 +89,12 @@ EasyConversion.convert
 
 **Usage**::
 
-    .BinToDec(binary : [bin, int, str, list], return_type=int)
+    .binary.decimal(binary : [bin, int, str, list], return_type=int)
 
 **Full example**::
    
    from EasyConversion import convert
-   print(convert.BinToDec("10101", return_type=str))
+   print(convert.binary.decimal("10101", return_type=str))
    
    
 **Arguments:**
@@ -110,42 +114,141 @@ EasyConversion.convert
 
 **Aliases:**
 
-    * bintodec
-    * binarytodecimal
-    * BinaryToDecimal
+    * Bin.Dec
+    * Bin.dec
+    * Binary.Decimal
+
+.. raw:: html
+
+    <h2>Decimal to Letter</h2>
+
+| 
+
+
+**Usage**::
+
+   .decimal.letter
+
+**Full example**::
+   
+   from EasyConversion import convert
+   print(convert.decimal.letter(["100", "3", "4", "not_number"]))
+   print(convert.decimal.letter(["100", "3", "4", "not_number"], repeat=True))
+   
+**Output:**
+
+    | The full example would output
+    |     ``[None, 'c', 'd', None]``
+    |     ``['v', 'c', 'd', None]``
+    | Output is the input number in letters (based on aplhabet)
+    | Output is in ``str``
+
+
+**Aliases:**
+
+    * Dec.letter
+    * Dec.let
+    * Decimal.Let
+    * Decimal.Letter
+    * decimal.Letter
+
+| 
+
+.. raw:: html
+
+    <h2>Letter to Decimal</h2>
+
+| 
+
+
+**Usage**::
+
+   .letter.decimal
+
+**Full example**::
+   
+   from EasyConversion import convert
+   print(convert.letter.decimal(["a", "b", "g", "100number"]))
+   print(convert.letter.decimal("abcdefgh", return_type=str))
+   
+**Output:**
+
+    | The full example would output
+    |     ``[1, 2, 7, None]``
+    |     ``['1', '2', '3', '4', '5', '6', '7', '8']``
+    | Output is the input letter(s) in numbers (based on aplhabet)
+    | Output is in ``int`` by default, or ``return_type=[option]``
+    | Output is a list unless it's a single letter
+
+
+**Aliases:**
+
+    * Letter.dec
+    * Let.dec
+    * Letter.Dec
+    * Letter.Decimal
+    * letter.Decimal
+
 
 ####################################
-EasyConversion.docs
+``EasyConversion``.docs
 ####################################
 
 Get the docs for a function, in the python script (less detailed, easier to find)
 
 
-Decimal to Binary docs:
+| 
+
+.. raw:: html
+
+    <h2>Documentation fetch format</h2>
+
+| 
 
 
 **Usage**::
 
-   .DecToBin
+   .[from].[to]
+
+   Example:
+   .letter.decimal
 
 **Full example**::
    
    from EasyConversion import docs
-   print(docs.DecToBin)
+   print(docs.decimal.letter)
    
 **Output:**
 
-    | Docs for Decimal to Binary in ``str``
+    | Docs for the section in ``str``
 
 
 **Aliases:**
 
-    * dectobin
-    * decimaltobinary
-    * DecimalToBinary
+    * See aliases for the section you want to see the documentation for
+    
+Aliases for .docs 
+    * .docfetch
+    * .fetch_docs
+    * .documentation
 
+| 
 
-`PyPi page <https://pypi.org/project/EasyConversion/>`_ | `GitHub page <https://github.com/Coolo22/EasyConversion/>`_
+########################################
+``EasyConversion``.info `(new in 0.4.0)`
+########################################
+
+.. raw:: html
+
+    <h2><b>.version</b></h2>
+
+Current version of the package with different Options:
+
+    ``.name``
+    Current version name/number 
+
+    ``.release_date``
+    Current version release date
 
 | 
 | 
@@ -157,8 +260,23 @@ Version history
 | 
 | 
 
+********************************************
+**0.4.0** (current) : 28 June 2020
+********************************************
+
+    * Re-ordered sections to make converting easier to read
+    * Fixed more aliases
+    * Improved (this) documentation page
+    * New convert option: letter (convert between number and letter)
+    * Fixed bugs with binary with decimal errors
+    * New file system, seperated sections convert and doc 
+    * New section, info (get version info, release date etc)
+    * General fixes and improvements all-round
+
+| 
+
 ******************************
-0.3.1 (Current) : 28 June 2020
+**0.3.1** : 28 June 2020
 ******************************
 
     * Fixed docs function
@@ -167,7 +285,7 @@ Version history
 | 
 
 ********************
-0.3 : 28 June 2020
+**0.3** : 28 June 2020
 ********************
 
     * Changed the file system so imports are smaller and easier
@@ -176,7 +294,7 @@ Version history
 | 
 
 ******************************
-0.2 : 27 June 2020
+**0.2** : 27 June 2020
 ******************************
 
     * Added in-built docs
@@ -184,7 +302,7 @@ Version history
 | 
 
 ******************************
-0.1 : 27 June 2020
+**0.1** : 27 June 2020
 ******************************
 
     * Initial release (``.Convert.BinToDec`` and ``.Convert.DecToBin``) [after **0.3** these are ``.convert.BinToDec`` and ``.convert.DecToBin``]
