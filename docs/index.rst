@@ -34,6 +34,7 @@ Decimal to binary
   ------
     .. code-block:: python
         .DecimalToBinary(decimal : str, int, list, return_type=str)
+    ..
     
       Arguments:
       ---------
