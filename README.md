@@ -8,7 +8,7 @@ For in-detail documentation see the [readthedocs page](https://easyconversion.re
 ```pip
 pip install EasyConversion
 ```
-Basic example:
+## Basic example:
 ```python
 from EasyConversion import convert
 from EasyConversion import docs
