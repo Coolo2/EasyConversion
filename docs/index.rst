@@ -40,8 +40,13 @@ Decimal to binary:
 
 **Usage**::
 
-   DecToBin(decimal : [str, int, list], return_type=bin)
+   .DecToBin(decimal : [str, int, list], return_type=bin)
 
+
+**Full example**::
+   from EasyConversion import convert
+   print(convert.DecToBin("21", return_type=bin))
+   
 
 **Arguments:**
 
@@ -72,9 +77,13 @@ Binary to Decimal:
 
 **Usage**::
 
-  nToDec(binary : [bin, int, str, list], return_type=int)
+    .BinToDec(binary : [bin, int, str, list], return_type=int)
 
-
+**Full example**::
+   from EasyConversion import convert
+   print(convert.BinToDec("10101", return_type=str))
+   
+   
 **Arguments:**
 
     | ``binary`` the binary number to input. Type: ``str, int, bin, list``
@@ -105,8 +114,12 @@ Decimal to Binary docs:
 
 **Usage**::
 
-   docs.DecToBin
-      
+   .DecToBin
+
+**Full example**::
+   from EasyConversion import docs
+   print(docs.DecToBin)
+   
 **Output:**
 
     | Docs for Decimal to Binary in ``str``
@@ -114,9 +127,9 @@ Decimal to Binary docs:
 
 **Aliases:**
 
-    * bintodec
-    * binarytodecimal
-    * BinaryToDecimal
+    * dectobin
+    * decimaltobinary
+    * DecimalToBinary
 
 
 `PyPi page <https://pypi.org/project/EasyConversion/>`_ | `GitHub page <https://github.com/Coolo22/EasyConversion/>`_
