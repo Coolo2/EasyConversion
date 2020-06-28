@@ -33,7 +33,7 @@ Decimal to binary
   Usage:
   ------
     .. code-block:: python
-    .DecimalToBinary(decimal : str, int, list, return_type=str)
+        .DecimalToBinary(decimal : str, int, list, return_type=str)
     
       Arguments:
       ---------
