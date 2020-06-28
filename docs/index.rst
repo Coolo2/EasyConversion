@@ -10,19 +10,19 @@ Easy Conversion
 Starting
 ******************
 
-    Installation
-    =============
+**Installation:**
 
-    ``pip install EasyConversion``
+``pip install EasyConversion``
 
-    Importing:
-    =============
+Or download it from the `PyPi page <https://pypi.org/project/EasyConversion/>`_
 
-        Importing main conversion:
-              ``from EasyConversion import convert``
+**Importing:**
 
-        Importing Documentation in python:
-              ``from EasyConversion import docs``
+    Importing main conversion:
+          ``from EasyConversion import convert``
+
+    Importing Documentation in python:
+          ``from EasyConversion import docs``
 
 
 
