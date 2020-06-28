@@ -38,6 +38,7 @@ Decimal to binary:
 
 
 Usage::
+
    DecToBin(decimal : str, int, list, return_type=str)
 
 
