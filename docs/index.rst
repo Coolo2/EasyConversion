@@ -11,12 +11,12 @@ Starting
 ******************
 
     Installation
-    ------------------
+    =============
 
     ``pip install EasyConversion``
 
     Importing:
-    ------------------
+    =============
 
         Importing main conversion:
               ``from EasyConversion import convert``
@@ -33,24 +33,24 @@ EasyConversion.convert.
     For conversions    
 
     Decimal to binary:
-    ------------------
+    ==========================
 
 
 
         Usage:
-        --------
+        =============
             ``DecToBin(decimal : str, int, list, return_type=str)``
 
 
 
         Arguments:
-        ------------------
+        =============
 
             | ``decimal`` the decimal number to input. Type: ``str, int, list``
             | Optional: ``return_type`` the output type. Options: ``bin, str, int`` Defaults to bin
         
         Output:
-        --------
+        =============
             | Output can be in a str, int, or [list](if input type is list)
             | Output type defaults to bin
             | Output type can be changed with argument return_type=[str, int, bin]
@@ -58,7 +58,7 @@ EasyConversion.convert.
             | List form returns '0' in error.
         
         Aliases:
-        --------
+        =============
             *dectobin
             *decimaltobinary
             *DecimalToBinary
