@@ -37,30 +37,60 @@ Decimal to binary:
 
 
 
-Usage:
+Usage::
 
-.. code-block:: python
-
-   DecToBin(decimal : str, int, list, return_type=str)
-
+   DecToBin(decimal : str, int, list, return_type=bin)
 
 
 Arguments:
-^^^^^^^^^^^^^^^^
 
     | ``decimal`` the decimal number to input. Type: ``str, int, list``
     | Optional: ``return_type`` the output type. Options: ``bin, str, int`` Defaults to bin
-
+    
+    
 Output:
-^^^^^^^^
-    | Output can be in a str, int, or [list](if input type is list)
+
+    | Output can be in a bin, str, int, or [list](if input type is list)
     | Output type defaults to bin
-    | Output type can be changed with argument return_type=[str, int, bin]
+    | Output type can be changed with argument ``return_type=[str, int, bin]``
     | If input type is list, it returns all sections converted in the same order
     | List form returns '0' in error.
 
+
 Aliases:
-^^^^^^^^
+
     * dectobin
     * decimaltobinary
     * DecimalToBinary
+
+
+Binary to Decimal:
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Usage::
+
+   BinToDec(binary : [bin, int, str, list], return_type=int)
+
+
+Arguments:
+
+    | ``binary`` the binary number to input. Type: ``str, int, bin, list``
+    | Optional: ``return_type`` the output type. Options: ``str, int`` Defaults to int
+    
+    
+Output:
+
+    | Output can be in a str, int, or [list](if input type is list)
+    | Output type defaults to int
+    | Output type can be changed with argument ``return_type=[str, int]``
+    | If input type is list, it returns all sections converted in the same order
+    | List form returns '0' in error.
+
+
+Aliases:
+
+    * bintodec
+    * binarytodecimal
+    * BinaryToDecimal
