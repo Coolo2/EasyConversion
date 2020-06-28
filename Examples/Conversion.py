@@ -3,14 +3,14 @@ from EasyConversion import docs
 """Imports"""
 
 
-print(convert.BinToDec(["10101", "1111", "11111111", "InvalidBinary"], return_type=str))
+print(convert.binary.decimal(["10101", "1111", "11111111", "InvalidBinary"], return_type=str))
 """
 Prints the list of binaries as decimal numbers, returning in a str list.
 Returns:
     ['21', '15', '255', '0']
 """
 
-binary = convert.DecimalToBinary("21", return_type=bin)
+binary = convert.decimal.binary("21", return_type=bin)
 """
 Converts the decimal (as a str, can be int) into binary, returning as a bin. 
 Returns:
@@ -18,5 +18,5 @@ Returns:
 """
 
 
-print(docs.bintodec)
+print(docs.Bin.Dec)
 """Prints documentation for Binary To Decimal conversions"""
