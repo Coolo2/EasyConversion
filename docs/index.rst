@@ -27,19 +27,24 @@ Importing:
 
 
 ===================
-(EasyConversion.convert.Convert.) **Decimal to binary**
+EasyConversion.convert.
 ===================
-
-    
-
-    Usage:
-    ------
-        ``DecimalToBinary(decimal : str, int, list, return_type=str)``
-
     
     
-    Arguments:
-    ---------
+    =================
+    Decimal to binary
+    =================
 
-        | ``decimal`` the decimal number to input. Type: ``str, int, list``
-        | Optional: ``return_type`` the output type. Options: ``bin, str, int`` Defaults to bin
+
+
+        Usage:
+        ------
+            ``DecimalToBinary(decimal : str, int, list, return_type=str)``
+
+
+
+        Arguments:
+        ---------
+
+            | ``decimal`` the decimal number to input. Type: ``str, int, list``
+            | Optional: ``return_type`` the output type. Options: ``bin, str, int`` Defaults to bin
