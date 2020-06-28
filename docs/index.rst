@@ -30,5 +30,5 @@ Decimal to binary
       Arguments:
       ==========
      
-          ``decimal`` the decimal number to input. Type: ``str, int, list`` |br|
-          Optional: ``return_type`` the output type. Options: ``bin, str, int`` Defaults to bin
+          | ``decimal`` the decimal number to input. Type: ``str, int, list``
+          | Optional: ``return_type`` the output type. Options: ``bin, str, int`` Defaults to bin
