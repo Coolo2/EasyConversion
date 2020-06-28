@@ -26,9 +26,9 @@ Starting
 
 
 
-***************************
+####################################
 EasyConversion.convert.
-***************************
+####################################
     
     Section for converting. There will be input, output, aliases and usage Documented.  
 
