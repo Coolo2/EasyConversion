@@ -32,7 +32,7 @@ Decimal to binary
 
   Usage:
   ------
-    .. code-block:: python
+    .. code-block:: guess
         .DecimalToBinary(decimal : str, int, list, return_type=str)
     ..
     
