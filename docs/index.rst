@@ -33,10 +33,13 @@ EasyConversion.convert
     
     Section for converting. There will be input, output, aliases and usage Documented.  
 
-Decimal to binary:
-^^^^^^^^^^^^^^^^^^^^^^^^
+| 
 
+.. raw:: html
 
+    <h2>Decimal To Binary</h2>
+
+| 
 
 **Usage**::
 
@@ -70,9 +73,13 @@ Decimal to binary:
     * decimaltobinary
     * DecimalToBinary
 
+| 
 
-Binary to Decimal:
-^^^^^^^^^^^^^^^^^^^^^^^^
+.. raw:: html
+
+    <h2>Binary to Decimal</h2>
+
+| 
 
 
 
@@ -113,8 +120,9 @@ EasyConversion.docs
 
 Get the docs for a function, in the python script (less detailed, easier to find)
 
+
 Decimal to Binary docs:
-^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 **Usage**::
 
@@ -141,30 +149,42 @@ Decimal to Binary docs:
 
 | 
 | 
+
 ####################################
 Version history
 ####################################
+
 | 
 | 
 
 ******************************
 0.3.1 (Current) : 28 June 2020
 ******************************
+
     * Fixed docs function
     * Fixed most aliases
+
 | 
+
 ********************
 0.3 : 28 June 2020
 ********************
+
     * Changed the file system so imports are smaller and easier
     * Fixed inputting binary in type ``bin``
+
 | 
+
 ******************************
 0.2 : 27 June 2020
 ******************************
+
     * Added in-built docs
+
 | 
+
 ******************************
 0.1 : 27 June 2020
 ******************************
+
     * Initial release (``.Convert.BinToDec`` and ``.Convert.DecToBin``) [after **0.3** these are ``.convert.BinToDec`` and ``.convert.DecToBin``]
