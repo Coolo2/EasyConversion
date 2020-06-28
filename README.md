@@ -10,7 +10,7 @@ from EasyConversion import docs
 print(docs.BinToDec)
 ```
 Options:
-⋅⋅* .BinToDec
-⋅⋅* .DecToBin
+* .BinToDec
+* .DecToBin
 
 Also see the [PyPi page](https://pypi.org/project/EasyConversion/) for download files / pip syntax
