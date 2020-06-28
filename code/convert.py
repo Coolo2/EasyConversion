@@ -94,21 +94,27 @@ class Dec:
         elif repeat == True or repeat in ['true', 'True', '1', 1]:
             if type(input_number) is list:
                 return_list = []
+                
                 for number in input_number:
+                    
                     try:
                         number = int(number)
                     except:
                         number = None
 
                     counter = 0
+                    
                     complete = False
                     while complete == False:
+                        
                         for letter in "abcdefghijklmnopqrstuvwxyz":
 
                             counter = counter + 1
+                            
                             digit = False
                             if str(number).isalpha():
                                 digit = True
+
                             if counter == number:
                                 done = 1
                                 return_list.append(letter)
@@ -230,28 +236,52 @@ class Letter:
     def Decimal(input_letter, return_type=int):
         if return_type not in [int, str]:
             raise TypeError('Invalid return type')
+        
+        
         if type(input_letter) is list or type(input_letter) is str and len(input_letter) > 1:
             return_list = []
+            
             for letter in input_letter:
+                
                 if not letter.isalpha():
                     return_list.append(None)
+                
+                
                 else:
                     counter = 0
+                    
                     for alp in "abcdefghijklmnopqrstuvwxyz":
+                        
+                        
                         counter = counter + 1
                         if letter.lower() == alp:
+                            
                             return_list.append(return_type(counter))
+            
+            
             return return_list
+        
+        
         elif type(input_letter) is str:
+            
             if not input_letter.isalpha():
                 raise Exception('Invalid letter')
+            
+            
             else:
                 counter = 0
+
                 for alp in "abcdefghijklmnopqrstuvwxyz":
+
                     counter = counter + 1
+
                     if input_letter.lower() == alp:
+
                         return return_type(counter)
+
     
     dec, Dec, decimal = Decimal, Decimal, Decimal
-                                
+
+
+
 letter, let, Let = Letter, Letter, Letter
