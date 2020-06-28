@@ -112,6 +112,8 @@ EasyConversion.docs
 Decimal to Binary docs:
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
+Get the docs for a function, in the python script (less detailed, easier to find)
+
 **Usage**::
 
    .DecToBin
