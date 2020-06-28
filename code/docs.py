@@ -22,7 +22,12 @@ class BinToDec_Declare():
     If input type is list, it returns all sections converted in the same order
     List form returns '0' in error.
 {colour.UNDERLINE}Aliases:{colour.END}
-    bintodec, BinaryToDecimal, binarytodecimal"""
+    bintodec, BinaryToDecimal, binarytodecimal
+    
+{colour.BOLD}More advanced docs can be found at
+https://easyconversion.readthedocs.io/
+{colour.END}  
+"""
 
 
 
@@ -45,10 +50,15 @@ class DecToBin_Declare():
     If input type is list, it returns all sections converted in the same order
     List form returns '0' in error.
 {colour.UNDERLINE}Aliases:{colour.END}
-    dectobin, DecimalToBinary, decimaltobinary"""
+    dectobin, DecimalToBinary, decimaltobinary
+    
+{colour.BOLD}More advanced docs can be found at
+https://easyconversion.readthedocs.io/
+{colour.END}  
+    """
     
     
     
 
-dectobin, decimaltobinary, DecimalToBinary = DecToBin_Declare.DecToBin, DecToBin_Declare.DecToBin, DecToBin_Declare.DecToBin
-bintodec, binarytodecimal, BinaryToDecimal = BinToDec_Declare.BinToDec,BinToDec_Declare.BinToDec, BinToDec_Declare.BinToDec
+DecToBin, dectobin, decimaltobinary, DecimalToBinary = DecToBin_Declare.DecToBin, DecToBin_Declare.DecToBin, DecToBin_Declare.DecToBin, DecToBin_Declare.DecToBin,
+BinToDec, bintodec, binarytodecimal, BinaryToDecimal = BinToDec_Declare.BinToDec,BinToDec_Declare.BinToDec, BinToDec_Declare.BinToDec, BinToDec_Declare.BinToDec
