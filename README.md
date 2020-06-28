@@ -4,7 +4,7 @@ The GitHub for the EasyConversion package.
 
 For in-detail documentation see the [readthedocs page](https://easyconversion.readthedocs.io/en/latest/).
 
-##Installation:
+## Installation:
 ```pip
 pip install EasyConversion
 ```
@@ -30,7 +30,7 @@ print(docs.Bin.Dec)
 #Prints documentation for Binary To Decimal conversions"""
 ```
 
-##Folders
+## Folders
 * `Examples` library examples for information
 * `Archive` archive of all previous version files, also available on the [PyPi page](https://pypi.org/project/EasyConversion/)
 * `Code` all the code for the library. Updated every version release
