@@ -247,6 +247,18 @@ Current version of the package with different Options:
     Current version release date
 
 | 
+
+**Full example**::
+   
+   from EasyConversion import info
+
+
+   print("We are version " + info.version.name)
+
+
+  print("Version " + info.version.name + " was released on " + info.version.release_date + ".")
+
+| 
 | 
 
 ####################################
@@ -256,9 +268,9 @@ Version history
 | 
 | 
 
-******************************
+************************************
 **0.4.1** (current) : 28 June 2020
-******************************
+************************************
 
     * Fixed major bug causing letter conversions to freeze
     * Added PyPi description
@@ -290,9 +302,9 @@ Version history
 
 | 
 
-********************
+************************
 **0.3** : 28 June 2020
-********************
+************************
 
     * Changed the file system so imports are smaller and easier
     * Fixed inputting binary in type ``bin``
