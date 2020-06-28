@@ -1,1 +1,1 @@
-from EasyConversion.convert import Convert, Docs
+from EasyConversion import Convert, Docs, Info
