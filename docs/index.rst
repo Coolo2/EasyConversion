@@ -34,7 +34,7 @@ Decimal to binary
   ------
     .. code-block:: guess
         .DecimalToBinary(decimal : str, int, list, return_type=str)
-    ..
+    
     
       Arguments:
       ---------
