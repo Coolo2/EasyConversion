@@ -59,6 +59,6 @@ EasyConversion.convert.
         
         Aliases:
         =============
-            *dectobin
-            *decimaltobinary
-            *DecimalToBinary
+            * dectobin
+            * decimaltobinary
+            * DecimalToBinary
