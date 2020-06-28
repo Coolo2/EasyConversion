@@ -9,10 +9,7 @@ Easy Conversion
 ******************
 Starting
 ******************
-.. role:: raw-html(raw)
-   :format: html
 
-:raw-html:`<font color="blue">Blue word,</font>`
 **Installation:**
 
 ``pip install EasyConversion``
@@ -74,6 +71,10 @@ Binary to Decimal:
 
 **Usage**::
 
+.. role:: raw-html(raw)
+   :format: html
+
+:raw-html:`<font color="grey">convert.</font>`
    BinToDec(binary : [bin, int, str, list], return_type=int)
 
 
