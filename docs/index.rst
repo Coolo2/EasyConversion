@@ -146,21 +146,21 @@ Decimal to Binary docs:
 ####################################
 Version history
 ####################################
-======================
+
 0.3.1 (Current) : 28 June 2020
 ======================
     * Fixed docs function
     * Fixed most aliases
-===================
+
 0.3 : 28 June 2020
 ===================
     * Changed the file system so imports are smaller and easier
     * Fixed inputting binary in type ``bin``
-===========
+
 0.2 : 27 June 2020
 ===========
     * Added in-built docs
-===========
+
 0.1 : 27 June 2020
 ===========
     * Initial release (.BinToDec and .DecToBin)
