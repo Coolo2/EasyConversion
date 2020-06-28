@@ -10,19 +10,19 @@ Easy Conversion
 Starting
 ******************
 
-Installation
-============
+    Installation
+    ============
 
-``pip install EasyConversion``
+    ``pip install EasyConversion``
 
-Importing:
-==========
+    Importing:
+    ==========
 
-    Importing main conversion: ::
-          from EasyConversion.convert import Convert
+        Importing main conversion: ::
+              from EasyConversion.convert import Convert
 
-    Importing Documentation in python: ::
-          from EasyConversion.docs import Docs
+        Importing Documentation in python: ::
+              from EasyConversion.docs import Docs
 
 
 
@@ -30,21 +30,21 @@ Importing:
 EasyConversion.convert.
 ***************************
     
-For conversions    
+    For conversions    
 
-Decimal to binary:
-=================
-
-
-
-    Usage:
-    ======
-        ``DecimalToBinary(decimal : str, int, list, return_type=str)``
+    Decimal to binary:
+    =================
 
 
 
-    Arguments:
-    ===========
+        Usage:
+        ======
+            ``DecimalToBinary(decimal : str, int, list, return_type=str)``
 
-        | ``decimal`` the decimal number to input. Type: ``str, int, list``
-        | Optional: ``return_type`` the output type. Options: ``bin, str, int`` Defaults to bin
+
+
+        Arguments:
+        ===========
+
+            | ``decimal`` the decimal number to input. Type: ``str, int, list``
+            | Optional: ``return_type`` the output type. Options: ``bin, str, int`` Defaults to bin
