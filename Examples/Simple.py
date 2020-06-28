@@ -1,16 +1,16 @@
-from EasyConversion.convert import Convert as c
-from EasyConversion.docs import Docs as d
+from EasyConversion import convert
+from EasyConversion import docs
 """Imports"""
 
 
-print(c.BinToDec(["10101", "1111", "11111111", "InvalidBinary"], return_type=str))
+print(convert.BinToDec(["10101", "1111", "11111111", "InvalidBinary"], return_type=str))
 """
 Prints the list of binaries as decimal numbers, returning in a str list.
 Returns:
     ['21', '15', '255', '0']
 """
 
-binary = c.DecimalToBinary("21", return_type=bin)
+binary = convert.DecimalToBinary("21", return_type=bin)
 """
 Converts the decimal (as a str, can be int) into binary, returning as a bin. 
 Returns:
@@ -18,5 +18,5 @@ Returns:
 """
 
 
-print(d.bintodec)
+print(docs.bintodec)
 """Prints documentation for Binary To Decimal conversions"""
