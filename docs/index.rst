@@ -27,7 +27,11 @@ Or download it from the `PyPi page <https://pypi.org/project/EasyConversion/>`_
 
 
 ####################################
-EasyConversion.convert.
+.. role:: raw-html(raw)
+   :format: html
+
+:raw-html:`<font color="grey">EasyConversion.</font>`
+convert.
 ####################################
     
     Section for converting. There will be input, output, aliases and usage Documented.  
@@ -71,10 +75,6 @@ Binary to Decimal:
 
 **Usage**::
 
-.. role:: raw-html(raw)
-   :format: html
-
-:raw-html:`<font color="grey">convert.</font>`
    BinToDec(binary : [bin, int, str, list], return_type=int)
 
 
