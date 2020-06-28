@@ -1,3 +1,4 @@
+.. include:: .special.rst
 ##################
 Easy Conversion
 ##################
@@ -9,7 +10,7 @@ Easy Conversion
 ******************
 Starting
 ******************
-
+:blue:`this part is blue`.
 **Installation:**
 
 ``pip install EasyConversion``
@@ -94,3 +95,5 @@ Binary to Decimal:
     * bintodec
     * binarytodecimal
     * BinaryToDecimal
+
+`PyPi page <https://pypi.org/project/EasyConversion/>`_ | `GitHub page <https://github.com/Coolo22/EasyConversion/>`_
