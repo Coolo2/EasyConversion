@@ -44,6 +44,7 @@ Decimal to binary:
 
 
 **Full example**::
+   
    from EasyConversion import convert
    print(convert.DecToBin("21", return_type=bin))
    
@@ -80,6 +81,7 @@ Binary to Decimal:
     .BinToDec(binary : [bin, int, str, list], return_type=int)
 
 **Full example**::
+   
    from EasyConversion import convert
    print(convert.BinToDec("10101", return_type=str))
    
@@ -109,16 +111,17 @@ Binary to Decimal:
 EasyConversion.docs
 ####################################
 
+Get the docs for a function, in the python script (less detailed, easier to find)
+
 Decimal to Binary docs:
 ^^^^^^^^^^^^^^^^^^^^^^^^
-
-Get the docs for a function, in the python script (less detailed, easier to find)
 
 **Usage**::
 
    .DecToBin
 
 **Full example**::
+   
    from EasyConversion import docs
    print(docs.DecToBin)
    
