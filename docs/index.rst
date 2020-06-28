@@ -39,10 +39,9 @@ Or download it from the `PyPi page <https://pypi.org/project/EasyConversion/>`_
 
 | 
 
-.. raw:: html
-
-    <h2>Decimal To Binary</h2>
-
+********************************************
+Decimal To Binary
+********************************************
 | 
 
 **Usage**::
@@ -79,10 +78,9 @@ Or download it from the `PyPi page <https://pypi.org/project/EasyConversion/>`_
 
 | 
 
-.. raw:: html
-
-    <h2>Binary to Decimal</h2>
-
+********************************************
+Binary to Decimal
+********************************************
 | 
 
 
@@ -118,10 +116,9 @@ Or download it from the `PyPi page <https://pypi.org/project/EasyConversion/>`_
     * Bin.dec
     * Binary.Decimal
 
-.. raw:: html
-
-    <h2>Decimal to Letter</h2>
-
+********************************************
+Decimal to Letter
+********************************************
 | 
 
 
@@ -154,10 +151,9 @@ Or download it from the `PyPi page <https://pypi.org/project/EasyConversion/>`_
 
 | 
 
-.. raw:: html
-
-    <h2>Letter to Decimal</h2>
-
+********************************************
+Letter to Decimal
+********************************************
 | 
 
 
@@ -199,9 +195,9 @@ Get the docs for a function, in the python script (less detailed, easier to find
 
 | 
 
-.. raw:: html
-
-    <h2>Documentation fetch format</h2>
+********************************************
+Documentation fetch format
+********************************************
 
 | 
 
@@ -238,9 +234,9 @@ Aliases for .docs
 ``EasyConversion``.info `(new in 0.4.0)`
 ########################################
 
-.. raw:: html
-
-    <h2><b>.version</b></h2>
+********************************************
+.version
+********************************************
 
 Current version of the package with different Options:
 
