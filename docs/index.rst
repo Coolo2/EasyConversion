@@ -4,10 +4,11 @@ Easy Conversion
 
 | EasyConversion is a library for easily converting in python. It is mostly made for testing, but can be used.
 | It is very early so don't expect much from it
+| For code examples, please see `here <https://github.com/Coolo22/EasyConversion/tree/master/Examples>`_
 
 
 ******************
-Starting
+Setup
 ******************
 
 **Installation:**
@@ -27,11 +28,7 @@ Or download it from the `PyPi page <https://pypi.org/project/EasyConversion/>`_
 
 
 ####################################
-.. role:: raw-html(raw)
-   :format: html
-
-:raw-html:`<font color="grey">EasyConversion.</font>`
-convert.
+EasyConversion.convert
 ####################################
     
     Section for converting. There will be input, output, aliases and usage Documented.  
@@ -75,7 +72,7 @@ Binary to Decimal:
 
 **Usage**::
 
-   BinToDec(binary : [bin, int, str, list], return_type=int)
+  nToDec(binary : [bin, int, str, list], return_type=int)
 
 
 **Arguments:**
@@ -98,5 +95,28 @@ Binary to Decimal:
     * bintodec
     * binarytodecimal
     * BinaryToDecimal
+
+####################################
+EasyConversion.docs
+####################################
+
+Decimal to Binary docs:
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Usage**::
+
+   docs.DecToBin
+      
+**Output:**
+
+    | Docs for Decimal to Binary in ``str``
+
+
+**Aliases:**
+
+    * bintodec
+    * binarytodecimal
+    * BinaryToDecimal
+
 
 `PyPi page <https://pypi.org/project/EasyConversion/>`_ | `GitHub page <https://github.com/Coolo22/EasyConversion/>`_
