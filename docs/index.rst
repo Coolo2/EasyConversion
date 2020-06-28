@@ -167,4 +167,4 @@ Version history
 ******************************
 0.1 : 27 June 2020
 ******************************
-    * Initial release (.BinToDec and .DecToBin)
+    * Initial release (``.Convert.BinToDec`` and ``.Convert.DecToBin``) [after **0.3** these are ``.convert.BinToDec`` and ``.convert.DecToBin``]
