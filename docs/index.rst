@@ -30,25 +30,25 @@ Starting
 EasyConversion.convert.
 ***************************
     
-    For conversions    
+    Section for converting. There will be input, output, aliases and usage Documented.  
 
 Decimal to binary:
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
-Usage::
+**Usage::**
 
-   DecToBin(decimal : str, int, list, return_type=bin)
+   DecToBin(decimal : [str, int, list], return_type=bin)
 
 
-Arguments:
+**Arguments:**
 
     | ``decimal`` the decimal number to input. Type: ``str, int, list``
     | Optional: ``return_type`` the output type. Options: ``bin, str, int`` Defaults to bin
     
     
-Output:
+**Output:**
 
     | Output can be in a bin, str, int, or [list](if input type is list)
     | Output type defaults to bin
@@ -57,7 +57,7 @@ Output:
     | List form returns '0' in error.
 
 
-Aliases:
+**Aliases:**
 
     * dectobin
     * decimaltobinary
@@ -69,18 +69,18 @@ Binary to Decimal:
 
 
 
-Usage::
+**Usage::**
 
    BinToDec(binary : [bin, int, str, list], return_type=int)
 
 
-Arguments:
+**Arguments:**
 
     | ``binary`` the binary number to input. Type: ``str, int, bin, list``
     | Optional: ``return_type`` the output type. Options: ``str, int`` Defaults to int
     
     
-Output:
+**Output:**
 
     | Output can be in a str, int, or [list](if input type is list)
     | Output type defaults to int
@@ -89,7 +89,7 @@ Output:
     | List form returns '0' in error.
 
 
-Aliases:
+**Aliases:**
 
     * bintodec
     * binarytodecimal
