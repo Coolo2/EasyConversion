@@ -1,4 +1,3 @@
-.. include:: .special.rst
 ##################
 Easy Conversion
 ##################
@@ -10,7 +9,10 @@ Easy Conversion
 ******************
 Starting
 ******************
-:red:`this part is red?`
+.. role:: raw-html(raw)
+   :format: html
+
+:raw-html:`<font color="blue">Blue word,</font>`
 **Installation:**
 
 ``pip install EasyConversion``
