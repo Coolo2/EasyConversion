@@ -1,13 +1,16 @@
 class version:
     class current:
-        name = "0.5.0"
-        release_date = "29th June 2020"
+        name = "0.5.1"
+        release_date = "30th June 2020"
 
     class get_version:
         def __init__(self, search):
-            if search == "0.5.0":
+            if search == "0.5.1":
+                self.name = "0.5.1"
+                self.release_date = "30 June 2020"
+            elif search == "0.5.0":
                 self.name = "0.5.0"
-                self.release_date = "29 June 2020"
+                self.release_date = "30 June 2020"
             elif search == "0.4.1":
                 self.name = "0.4.1"
                 self.release_date = "28 June 2020"
