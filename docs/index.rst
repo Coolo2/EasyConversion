@@ -620,7 +620,16 @@ Version history
 | 
 
 ************************************
-**0.5.0** (current) : 30 June 2020
+**0.5.1** (current) : 30 June 2020
+************************************
+
+    * Fixed some bugs with release ``0.5.0``
+    * Added more examples to the GitHub 
+
+|
+
+************************************
+**0.5.0** : 30 June 2020
 ************************************
 
     * Added conversions between string and Ascii Binary
