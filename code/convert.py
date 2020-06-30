@@ -1,3 +1,6 @@
+from EasyConversion import Morse_Dict 
+
+MORSE_CODE_DICT = Morse_Dict.dict.Dict
 
 class Dec:
 
@@ -230,6 +233,34 @@ class Bin:
 
 binary, Binary = Bin, Bin
 
+class Ascii:
+
+    def Letter(input_ascii):
+        b = input_ascii
+        if type(b) is str:
+            if "," in b and ", " not in b:
+                final = b.split(",")
+            elif ", " in b:
+                final = b.split(", ")
+            elif " " in b and ',' not in b:
+                final = b.split(" ")
+            else:
+                final = [b]
+        if type(b) is list:
+            final = []
+            for item in b:
+                try:
+                    final.append(bin(item))
+                except:
+                    final.append(str(item))
+        try:
+            return ''.join([chr(int(x, 2)) for x in final])
+        except:
+            raise Exception('Invalid Ascii')
+    
+    letter, Let, let, string, Str, String = Letter, Letter, Letter, Letter, Letter, Letter, 
+
+asc, Asc, asciibinary, AsciiBinary, Asciibinary = Ascii, Ascii, Ascii, Ascii, Ascii
 
 class Letter:
 
@@ -282,6 +313,127 @@ class Letter:
     
     dec, Dec, decimal = Decimal, Decimal, Decimal
 
+    def Ascii(input_string):
+        s = input_string
+
+        if type(s) is not list:
+
+            b = []
+            for character in s:
+
+                b.append(character)
+
+        else:
+            b = s
+
+        return [bin(ord(x))[2:].zfill(8) for x in b]
+    
+    asc, Asc, asciibinary, AsciiBinary, Asciibinary = Ascii, Ascii, Ascii, Ascii, Ascii
+
+    def morse(input_text): 
+        cipher = '' 
+        message = input_text.upper()
+        for letter in message: 
+            if letter != ' ': 
+    
+                cipher += MORSE_CODE_DICT[letter] + ' '
+            else: 
+                cipher += ' '
+    
+        return cipher 
+    
+    Morse, morsecode, Morsecode, MorseCode = morse, morse, morse, morse
 
 
-letter, let, Let = Letter, Letter, Letter
+letter, string, String, Str, let, Let = Letter, Letter, Letter, Letter, Letter, Letter
+
+class Detect:
+            
+    def asciistring(input, return_type=list):
+
+        if return_type == list:
+            if True in [c in input for c in "abcdefghijklmnopqrstuvwxyz!@#$%^&*()23456789[];'\,./<>?:|"]:
+
+                return Letter.asciibinary(input)
+            
+            else:
+                return asciibinary.Letter(input)
+        if return_type == str:
+
+            if True in [c in input for c in "abcdefghijklmnopqrstuvwxyz!@#$%^&*()23456789[];'\,./<>?:|"]:
+
+                return ' '.join(Letter.asciibinary(input))
+            
+            else:
+                return asciibinary.Letter(input)
+    
+    stringascii, StringAscii, Stringascii, Asciistring, AsciiString = asciistring, asciistring, asciistring, asciistring, asciistring
+
+    def binarydecimal(input):
+
+        if True in [c in str(input) for c in "23456789"]:
+            return Decimal.Binary(input, return_type=str)
+            
+        else:
+            return Binary.Decimal(str(input).replace("0b", ""))
+    
+    decimalbinary, Decimalbinary, DecimalBinary, Binarydecimal, BinaryDecimal = binarydecimal, binarydecimal, binarydecimal, binarydecimal, binarydecimal
+
+    def morsestring(input):
+
+        if True in [c in str(input) for c in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUV1234567890!@#$%^&*()=+;'\[]:"]:
+            return Letter.morse(input)
+            
+        else:
+            return Morse.string(input)
+    
+    MorseString, Morsestring, Stringmorse, stringmorse, StringMorse = morsestring, morsestring, morsestring, morsestring, morsestring
+
+detect = Detect
+
+class Morse:
+
+    def string(morse_code): 
+  
+        message = morse_code
+        message += ' '
+    
+        decipher = '' 
+        citext = '' 
+        for letter in message: 
+    
+
+            if (letter not in [' ', '/', ' / ']):
+    
+
+                i = 0
+    
+                citext += letter 
+
+            else: 
+                i += 1
+    
+
+                if i == 2 : 
+    
+
+                    decipher += ' '
+                else: 
+                    
+                    try:
+                        decipher += list(MORSE_CODE_DICT.keys())[list(MORSE_CODE_DICT 
+                        .values()).index(citext)] 
+                        citext = '' 
+                    except:
+                        try:
+                            decipher += list(Morse_Dict.dict.Dict2.keys())[list(Morse_Dict.dict.Dict2
+                            .values()).index(citext)] 
+                            citext = '' 
+                        except:
+                            pass
+    
+        return decipher 
+    
+    String, Str, letter, Letter = string, string, string, string
+
+morse, morsecode, Morsecode, MorseCode = Morse, Morse, Morse, Morse
