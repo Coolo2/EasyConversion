@@ -1,13 +1,13 @@
 from EasyConversion import info
 #Imports
 
-print("We are version " + info.version.name)
+print("We are version " + info.version.current.name)
 #Print the version number
 #Outputs:
-#   We are version 0.4.1 [replace 0.4.1 with current version]
+#   We are version 0.5.1
 
-
-print("Version " + info.version.name + " was released on " + info.version.release_date + ".")
+get_version = info.version.get_version("0.2.0")
+print("Version " + get_version.name + " was released on " + get_version.release_date + ".")
 #Prints the version name with release date
 #Outputs:
-#   Version 0.4.1 released on June 28th 2020 [these are replaced with correct values]
+#   Version 0.2.0 released on June 27th 2020.
