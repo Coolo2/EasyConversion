@@ -31,6 +31,12 @@ Or download it from the `PyPi page <https://pypi.org/project/EasyConversion/>`_
     
     Importing Info:
           ``from EasyConversion import info``
+    
+    Importing Print Formatting:
+          ``from EasyConversion import textformat``
+    
+    Importing all:
+          ``from EasyConversion import convert, docs, info, textformat``
 
 
 
@@ -619,8 +625,20 @@ Version history
 | 
 | 
 
+*************************************
+**0.5.2** (current) : 1 July 2020
+*************************************
+
+    * Changed how getting current version works; smaller code
+    * Fixed a few things in the documentation and examples
+    * Changed default return type for ``detect.asciistring`` to ``str``
+    * Added better error messages to morse 
+    * Fixed detection errors
+
+| 
+
 ************************************
-**0.5.1** (current) : 30 June 2020
+**0.5.1** : 30 June 2020
 ************************************
 
     * Fixed some bugs with release ``0.5.0``
