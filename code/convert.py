@@ -335,8 +335,12 @@ class Letter:
         message = input_text.upper()
         for letter in message: 
             if letter != ' ': 
-    
-                cipher += MORSE_CODE_DICT[letter] + ' '
+                try:
+                    
+                    cipher += MORSE_CODE_DICT[letter] + ' '
+                
+                except:
+                    raise Exception('Found invalid characters')
             else: 
                 cipher += ' '
     
@@ -349,7 +353,7 @@ letter, string, String, Str, let, Let = Letter, Letter, Letter, Letter, Letter, 
 
 class Detect:
             
-    def asciistring(input, return_type=list):
+    def asciistring(input, return_type=str):
 
         if return_type == list:
             if True in [c in input for c in "abcdefghijklmnopqrstuvwxyz!@#$%^&*()23456789[];'\,./<>?:|"]:
@@ -431,7 +435,8 @@ class Morse:
                             citext = '' 
                         except:
                             pass
-    
+        if decipher == "":
+            raise Exception("Invalid morse")
         return decipher 
     
     String, Str, letter, Letter = string, string, string, string
