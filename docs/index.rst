@@ -626,7 +626,7 @@ Version history
 | 
 
 *************************************
-**0.5.3** (current) : 3 July 2020
+**0.5.4** (current) : 3 July 2020
 *************************************
 
     | Fixed some issues with detection
