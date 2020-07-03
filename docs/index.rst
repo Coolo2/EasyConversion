@@ -356,7 +356,7 @@ Morse to String
 |
 
 ###########################################################
-[alpha] ``EasyConversion.convert``.detect *(new in 0.5.0)*
+``EasyConversion.convert``.detect
 ###########################################################
 
 Detect input type and create output based on that
@@ -626,7 +626,16 @@ Version history
 | 
 
 *************************************
-**0.5.2** (current) : 1 July 2020
+**0.5.3** (current) : 3 July 2020
+*************************************
+
+    | Fixed some issues with detection
+    | Detection is now out of beta
+
+|
+
+*************************************
+**0.5.2** : 1 July 2020
 *************************************
 
     * Changed how getting current version works; smaller code
