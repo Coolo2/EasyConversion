@@ -1,4 +1,4 @@
-# EasyConversion 0.6.0
+# EasyConversion 0.6.1
 
 The GitHub for the EasyConversion package. 
 
