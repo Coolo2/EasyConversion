@@ -2,7 +2,16 @@ class version:
 
     class get_version:
         def __init__(self, search):
-            if search == "0.5.4":
+            if search == "0.6.1":
+                self.name = "0.6.1"
+                self.release_date = "12 July 2020"
+            elif search == "0.6.0":
+                self.name = "0.6.0"
+                self.release_date = "12 July 2020"
+            elif search == "0.5.5":
+                self.name = "0.5.5"
+                self.release_date = "12 July 2020"
+            elif search == "0.5.4":
                 self.name = "0.5.4"
                 self.release_date = "3 July 2020"
             elif search == "0.5.3":
@@ -37,4 +46,4 @@ class version:
                 self.release_date = "27 June 2020"
             else:
                 raise Exception("Invalid release")
-    current = get_version("0.5.4")
+    current = get_version("0.6.1")
