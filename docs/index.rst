@@ -340,7 +340,7 @@ Morse to String
     | The full example would output:
     |     ``STRING``
     | Output is the input text converted into morse
-    | Output is in ``··· - ·-· ·· -· --·``
+    | Output is ``··· - ·-· ·· -· --·``
 
 
 **Aliases:**
@@ -351,6 +351,80 @@ Morse to String
     * letter.morse
     * Letter.Morse 
     * Letter.morse
+
+|
+
+*************************************
+Farenheit to celsius
+*************************************
+
+**Usage**::
+
+   .farenheit.celsius(farenheit)
+
+**Arguments:**
+
+    | ``farenheit`` the farenheit to be converted into celsius
+
+**Full example**::
+   
+   from EasyConversion import convert
+
+   print(convert.farenheit.celsius("50"))
+   
+**Output:**
+
+    | The full example would output:
+    |     ``10.0``
+    | Output is the input farenheit converted into celsius
+
+
+**Aliases:**
+
+    * f.c
+    * farenheit.celsius
+    * Farenheit.celsius
+    * farenheit.c
+    * f.celsius
+    * farenheit.Celsius
+
+|
+
+|
+
+*************************************
+Celsius to farenheit
+*************************************
+
+**Usage**::
+
+   .celsius.farenheit(celsius)
+
+**Arguments:**
+
+    | ``celsius`` the celsius to be converted into farenheit
+
+**Full example**::
+   
+   from EasyConversion import convert
+
+   print(convert.celsius.farenheit("10"))
+   
+**Output:**
+
+    | The full example would output:
+    |     ``50.0``
+    | Output is the input celsius converted into farenheit
+
+
+**Aliases:**
+
+    * c.f
+    * celsius.farenheit
+    * Celsius.farenheit
+    * celcius.f
+    * c.farenheit
+    * celsius.Farenheit
 
 |
 |
@@ -476,6 +550,44 @@ Morse and String
     * Stringmorse
     * stringmorse
     * StringMorse
+
+| 
+
+*************************************
+Celsius and Farenheit
+*************************************
+
+**Usage**::
+
+   .celsiusfarenheit(input)
+
+**Arguments:**
+
+    | ``input`` the celsius or farenheit to be converted
+
+**Full example**::
+   
+   from EasyConversion import convert
+
+   print(convert.detect.celsiusfarenheit("50f"))
+   print(convert.detect.celsiusfarenheit(["10c", "50f"]))
+   
+**Output:**
+
+    | The full example would output:
+    |     ``10.0``
+    |     ``[50.0, 10.0]``
+    | Output is the input converted, after detecting if it is celsius or farenheit (requires a c or f)
+    | Output is in ``float``
+
+
+**Aliases:**
+
+    * celsiusfarenheit
+    * FarenheitCelsius
+    * CelsiusFarenheit
+    * Farenheitcelsius
+    * Celsiusfarenheit
 
 | 
 | 
@@ -624,6 +736,20 @@ Version history
 
 | 
 | 
+
+************************************
+**0.6.0** (current) : 12 July 2020
+************************************
+
+    | Fixed bugs with inputting lists on `detect` for binarydecimal
+    | Added support for / on morse 
+    | Fixed bugs with morse and .
+    | Some bugs with getting versions and incorrect versino names fixed
+    | GitHub updates
+    | Added conversion between celsius and farenheit (with detect option)
+    | Fixed a few errors in documentation
+
+|
 
 *************************************
 **0.5.4** (current) : 3 July 2020
