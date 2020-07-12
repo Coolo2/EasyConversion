@@ -156,11 +156,16 @@ class Bin:
         if type(binary) is list:
             return_list = []
             for number in binary:
-
+                wentinto = 0
+                if type(number) is int:
+                    number= str(int(str(number).replace("0b", "")))
+                    wentinto = 1
                 for non_binary in ['2', '3', '4', '5', '6', '7', '8', '9']:
                     if non_binary in number:
-
-                        binary = 0
+                        if wentinto == 1:
+                            return_list.append(return_type(number))
+                        else:
+                            binary = 0
 
 
 
@@ -185,21 +190,27 @@ class Bin:
                     
                     power += 1 #increase the power variable by one  
                 
-                try:
-                    return_list.append(return_type(decimal))
-                
-                except:
-                    return_list.append(return_type("0"))
+                if wentinto != 1:
+                    try:
+                        return_list.append(return_type(decimal))
+                    
+                    except:
+                        return_list.append(return_type("0"))
 
 
             return return_list
 
         else:
-
+            wentinto = 0
+            if type(binary) is int:
+                binary = str(int(str(binary).replace("0b", "")))
+                wentinto = 1
             for non_binary in ['2', '3', '4', '5', '6', '7', '8', '9']:
                 if non_binary in binary:
-
-                    raise TypeError('Invalid binary number')
+                    if wentinto == 1:
+                        return binary 
+                    else:
+                        raise TypeError('Invalid binary number')
 
             try:
                 binary = int(str(binary).replace('0b', ''))
