@@ -1,4 +1,4 @@
-# EasyConversion
+# EasyConversion 0.4.4
 
 The GitHub for the EasyConversion package. 
 
@@ -11,23 +11,22 @@ pip install EasyConversion
 ## Basic example:
 ```python
 from EasyConversion import convert
-from EasyConversion import docs
 #Imports
 
 
 print(convert.binary.decimal(["10101", "1111", "11111111", "InvalidBinary"], return_type=str))
-#Prints the list of binaries as decimal numbers, returning in a str list.
+#Converts the list of binaries into decimal
 #Returns:
-#    ['21', '15', '255', '0']
+#   ['21', '15', '255', '0']
 
-binary = convert.decimal.binary("21", return_type=bin)
-#Converts the decimal (as a str, can be int) into binary, returning as a bin. 
+print (
+    convert.detect.asciistring("HELLO") + "\n" +
+    convert.detect.asciistring("1000001 1010101")
+)
+#Detects if the input is ascii or text and converts it both ways
 #Returns:
-#    0b10101
-
-
-print(docs.Bin.Dec)
-#Prints documentation for Binary To Decimal conversions"""
+#   01001000 01000101 01001100 01001100 01001111
+#   AU
 ```
 
 ## Folders
