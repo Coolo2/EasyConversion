@@ -52,7 +52,6 @@ class Dec:
                     raise TypeError('Invalid return type')
 
             except Exception as e:
-                print(e)
                 raise Exception('Invalid decimal.')
 
     binary, Binary = Bin, Bin
@@ -379,7 +378,7 @@ class Detect:
             return Decimal.Binary(input, return_type=str)
             
         else:
-            return Binary.Decimal(str(input).replace("0b", ""))
+            return Binary.Decimal(input)
     
     decimalbinary, Decimalbinary, DecimalBinary, Binarydecimal, BinaryDecimal = binarydecimal, binarydecimal, binarydecimal, binarydecimal, binarydecimal
 
@@ -392,6 +391,34 @@ class Detect:
             return Morse.string(input)
     
     MorseString, Morsestring, Stringmorse, stringmorse, StringMorse = morsestring, morsestring, morsestring, morsestring, morsestring
+
+    def celsiusfarenheit(input):
+
+        if type(input) is list:
+            finallist = []
+            for item in input:
+                if "c" in str(item):
+                    try:
+                        finallist.append(celsius.farenheit(item))
+                    except:
+                        finallist.append(None)
+                elif "f" in str(item):
+                    try:
+                        finallist.append(farenheit.celsius(item))
+                    except:
+                        finallist.append(None)
+                else:
+                    finallist.append(None)
+            return finallist
+        else:
+            if "c" in str(input):
+                return celsius.farenheit(input)
+            elif "f" in str(input):
+                return farenheit.celsius(input)
+            else:
+                raise Exception("Could not detect input type, maybe add a 'c' or 'f'?")
+    
+    farenheitcelsius, Farenheitcelsius, FarenheitCelsius, CelsiusFarenheit, Celsiusfarenheit = celsiusfarenheit, celsiusfarenheit, celsiusfarenheit, celsiusfarenheit, celsiusfarenheit
 
 detect = Detect
 
@@ -442,3 +469,62 @@ class Morse:
     String, Str, letter, Letter = string, string, string, string
 
 morse, morsecode, Morsecode, MorseCode = Morse, Morse, Morse, Morse
+
+
+class Celsius:
+
+    def Farenheit(Celsius):
+
+        if type(Celsius) is list: 
+            
+            finallist = []
+            for item in Celsius:
+                if type(item) is str:
+                    item = item.lower().replace("°", "").replace("celsius", "").replace("c", "").replace("degrees", "").replace(" ", "")
+                try:
+                    finallist.append((int(item) * 9/5) + 32)
+                except:
+                    finallist.append(None)
+            return finallist
+        
+        
+        else:
+            if type(Celsius) is str:
+                Celsius = Celsius.lower().replace("°", "").replace("celsius", "").replace("c", "").replace("degrees", "").replace(" ", "")
+
+            try:
+                return (int(Celsius) * 9/5) + 32
+            except:
+                raise Exception("Invalid temperature")
+
+    farenheit, f, degreesf, degrees_f = Farenheit, Farenheit, Farenheit, Farenheit
+
+celsius, c, degreesc, degrees_c = Celsius, Celsius, Celsius, Celsius
+
+class Farenheit:
+    def Celsius(Farenheit):
+        if type(Farenheit) is list: 
+            
+            finallist = []
+            for item in Farenheit:
+                if type(item) is str:
+                    item = item.lower().replace("°", "").replace("farenheit", "").replace("f", "").replace("degrees", "").replace(" ", "")
+                try:
+                    finallist.append((int(item) - 32) * 5/9)
+                except:
+                    finallist.append(None)
+            return finallist
+        
+        
+        else:
+            if type(Farenheit) is str:
+                Farenheit = Farenheit.lower().replace("°", "").replace("farenheit", "").replace("f", "").replace("degrees", "").replace(" ", "")
+
+            try:
+                return ((int(Farenheit) - 32) * 5/9)
+            except:
+                raise Exception("Invalid temperature")
+    
+    celsius, c, degreesc, degrees_c = Celsius, Celsius, Celsius, Celsius
+
+farenheit, f, degreesf, degrees_f = Farenheit, Farenheit, Farenheit, Farenheit
