@@ -318,7 +318,7 @@ Morse to String
 |
 
 *************************************
-Morse to String
+String to Morse
 *************************************
 
 **Usage**::
@@ -684,7 +684,7 @@ Aliases for .docs
 | 
 
 ################################################
-``EasyConversion``.info `(updated in 0.5.0)`
+``EasyConversion``.info
 ################################################
 
 ********************************************
@@ -737,14 +737,27 @@ Version history
 | 
 | 
 
+*************************************
+**0.6.1** : 12 July 2020
+*************************************
+
+    | Fixed more issues with documentation 
+    | Added GitHub examples for the last 5 updates 
+    | Fixed bugs and tweaked small things with conversion
+    | Rewrote inbuilt docs to return links instead of text (it's easier to maintain this way)
+    | Added a few missing versions for getting versions with ``EasyConversion.info``
+    | Minor performance improvements
+
+|
+
 ************************************
-**0.6.0** (current) : 12 July 2020
+**0.6.0** : 12 July 2020
 ************************************
 
     | Fixed bugs with inputting lists on `detect` for binarydecimal
     | Added support for / on morse 
     | Fixed bugs with morse and .
-    | Some bugs with getting versions and incorrect versino names fixed
+    | Some bugs with getting versions and incorrect version names fixed
     | GitHub updates
     | Added conversion between celsius and farenheit (with detect option)
     | Fixed a few errors in documentation
