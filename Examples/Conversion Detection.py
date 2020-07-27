@@ -7,6 +7,6 @@ print (convert.detect.asciistring("HELLO") )
 #   01001000 01000101 01001100 01001100 01001111
 
 print (convert.detect.morsestring("···· · ·-·· ·-·· ---") )
-#Detects if the input is ascii or text and converts it both ways
+#Detects if the input is morse or text and converts it both ways
 #Returns:
 #   HELLO
