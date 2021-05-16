@@ -347,14 +347,14 @@ class Letter:
             if letter != ' ': 
                 try:
                     
-                    cipher += MORSE_CODE_DICT[letter] + ' '
+                    cipher += MORSE_CODE_DICT[letter] + ' / '
                 
                 except:
                     raise Exception('Found invalid characters')
             else: 
                 cipher += ' '
     
-        return cipher 
+        return cipher[0:len(cipher)-2]
     
     Morse, morsecode, Morsecode, MorseCode = morse, morse, morse, morse
 
@@ -366,7 +366,7 @@ class Detect:
     def asciistring(input, return_type=str):
 
         if return_type == list:
-            if True in [c in input for c in "abcdefghijklmnopqrstuvwxyz!@#$%^&*()23456789[];'\,./<>?:|-_ABCDEFGHIJKLMNOPQRSTUVWXYZ="]:
+            if True in [c in input for c in "abcdefghijklmnopqrstuvwxyz!@#$%^&*()23456789[];'\./<>?:|-_ABCDEFGHIJKLMNOPQRSTUVWXYZ="]:
 
                 return Letter.asciibinary(input)
             
@@ -374,7 +374,7 @@ class Detect:
                 return asciibinary.Letter(input)
         if return_type == str:
 
-            if True in [c in input for c in "abcdefghijklmnopqrstuvwxyz!@#$%^&*()23456789[];'\,./<>?:|-_ABCDEFGHIJKLMNOPQRSTUVWXYZ="]:
+            if True in [c in input for c in "abcdefghijklmnopqrstuvwxyz!@#$%^&*()23456789[];'\./<>?:|-_ABCDEFGHIJKLMNOPQRSTUVWXYZ="]:
 
                 return ' '.join(Letter.asciibinary(input))
             
