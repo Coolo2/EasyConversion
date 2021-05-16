@@ -347,14 +347,14 @@ class Letter:
             if letter != ' ': 
                 try:
                     
-                    cipher += MORSE_CODE_DICT[letter] + ' / '
+                    cipher += MORSE_CODE_DICT[letter] + ' '
                 
                 except:
                     raise Exception('Found invalid characters')
             else: 
-                cipher += ' '
+                cipher += ' / '
     
-        return cipher[0:len(cipher)-2]
+        return cipher
     
     Morse, morsecode, Morsecode, MorseCode = morse, morse, morse, morse
 
